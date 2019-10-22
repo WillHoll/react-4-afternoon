@@ -23,13 +23,14 @@ export default class ClassList extends Component {
   render() {
     let studentDis = this.state.students.map((el, i) => {
       return (
-      <Link key={i} to='/student/:id'>
+      <Link key={i} to={`/student/${el.id}/`}>
       <h3 >{el.first_name} {el.last_name}</h3>
       </Link>
       )
     })
     return (
       <div className="box">
+        <Link to={'/'}>&lt;Back</Link>
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {studentDis}

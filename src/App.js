@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { HashRouter } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import routes from './routes';
-import ClassList from './components/ClassList/ClassList';
 
 export default class App extends Component {
   render() {
